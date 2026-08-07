@@ -1,7 +1,6 @@
 # SHANE 產品體驗架構計畫｜專案紀錄
 
 > 版本紀錄日期：2026-08-07  
-> GitHub 儲存庫：[Shane133442/shane_saleskit](https://github.com/Shane133442/shane_saleskit)  
 > 設計參考來源：`C:\Users\User\Desktop\saleskit\01.png` ～ `06.png`
 
 ## 1. 專案概覽
@@ -17,7 +16,6 @@ website/
 ├─ index.html
 ├─ PROJECT.md
 └─ img/
-   ├─ moon-hero.png
    ├─ moon-hero01.png
    ├─ plan.png
    ├─ project.png
@@ -131,8 +129,7 @@ website/
 
 | 檔案 | 用途 |
 |---|---|
-| `moon-hero01.png` | 首屏右側目前使用的完整月球，來源為使用者提供的附圖 1 |
-| `moon-hero.png` | 前一版月球素材，目前未被頁面引用 |
+| `moon-hero.png` | 首屏右側完整月球，來源為使用者提供的附圖 1 |
 | `rem.png` | 產品問題區的流程關係視覺 |
 | `shape.png` | Golden Circle、背景月球及其他月相裝飾 |
 | `plan.png` | 三層級介面示意圖的裁切來源 |
@@ -178,7 +175,9 @@ website/
 5. 在 Chrome、Safari、Edge 與行動裝置進行實際視覺測試。
 6. 補上正式聯絡方式、隱私權政策、服務條款與 SEO 分享圖片。
 
-## 13.Github公開網址
+## 12.Github儲存庫與推送資訊
 
-- 公開網址：[https://shane133442.github.io/shane_saleskit/](https://shane133442.github.io/shane_saleskit/)
-- 目前狀態：已上線。2026-08-07 已完成 GitHub Pages 部署並驗證回應 HTTP 200，可供一般使用者公開瀏覽。
+GitHub 儲存庫：[Shane133442/shane_saleskit](https://github.com/Shane133442/shane_saleskit.git)  
+
+## 13.Github公開網址
+https://shane133442.github.io/shane_saleskit/
