@@ -181,4 +181,4 @@ website/
 ## 13.Github公開網址
 
 - 公開網址：[https://shane133442.github.io/shane_saleskit/](https://shane133442.github.io/shane_saleskit/)
-- 目前狀態：部署中，待 GitHub Pages 完成發佈後即可公開瀏覽。
+- 目前狀態：已上線。2026-08-07 已完成 GitHub Pages 部署並驗證回應 HTTP 200，可供一般使用者公開瀏覽。
