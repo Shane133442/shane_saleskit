@@ -857,7 +857,7 @@
                   <div class="mb-3"><label for="company">您的公司或專案名稱</label><input class="form-control" id="company" name="company" type="text" placeholder="請輸入公司或專案名稱"></div>
                   <div class="mb-3"><label for="product">您目前正在開發的數位產品類型</label><input class="form-control" id="product" name="product" type="text" placeholder="例如：SaaS、AI 工具、MVP 階段產品"></div>
                   <div class="mb-3"><label for="challenge">您目前最痛苦的產品失控問題是什麼？</label><textarea class="form-control" id="challenge" name="challenge" placeholder="請簡述您遇到的主要問題與挑戰"></textarea></div>
-                  <a class="submit-btn btnstyle" href="purchase.html">提交預約：獲取免費產品體驗診斷　→</a>
+                  <a class="submit-btn btnstyle" href="./purchase.html">提交預約：獲取免費產品體驗診斷　→</a>
                   <p class="form-note">● 送出後 2 個工作天內由顧問親自聯繫，協助釐清品牌現況與下一步。</p>
                 </div>
               </div>
@@ -882,22 +882,29 @@
     <script>
             //addEventListener效果
       var abc = document.querySelector(".btnstyle");
-      abc.addEventListener(
-        "click",function () {
-          gtag("event", "generate_lead", {
-            currency: "表單提交",
-            value: 2026,
-            lead_source: "Trade show",
-            items: [
-              {
-                item_id: "SKU_12345",
-                item_name: "Stan and Friends Tee"
+      if (abc) {
+        abc.addEventListener(
+          "click", function () {
+            try {
+              if (typeof gtag === 'function') {
+                gtag("event", "generate_lead", {
+                  currency: "表單提交",
+                  value: 2026,
+                  lead_source: "Trade show",
+                  items: [
+                    {
+                      item_id: "SKU_12345",
+                      item_name: "Stan and Friends Tee"
+                    }
+                  ]
+                });
               }
-            ]
-          });
-
-        },false
-      );
+            } catch (e) {
+              console.error(e);
+            }
+          }, false
+        );
+      }
     </script>
   </body>
 </html>
